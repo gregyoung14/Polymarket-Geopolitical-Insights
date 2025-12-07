@@ -393,11 +393,14 @@ Return JSON:
         print("🤖 Calling Grok-4-1-Fast for tweet analysis...")
         print()
         
+        # Allow larger completions to avoid truncation; override via GROK_MAX_TOKENS
+        max_tokens = int(os.getenv("GROK_MAX_TOKENS", "16000"))
+        
         response = await client._call_grok(
             system_prompt=system_prompt,
             user_prompt=user_prompt,
             temperature=0.2,
-            max_tokens=8000,
+            max_tokens=max_tokens,
             expect_json=True
         )
     finally:
