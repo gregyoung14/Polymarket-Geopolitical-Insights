@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Grokedge Polymarket Insights",
+  "version": "0.2.0",
+  "description": "Adds a slide-in panel on Polymarket to surface Grok/X insights and live outcome prices.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://polymarket.com/*"],
+  "background": {
+    "service_worker": "src/background.ts"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://polymarket.com/*"],
+      "js": ["src/content/index.tsx"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "GrokEdge Polymarket Insights"
+  }
+}
