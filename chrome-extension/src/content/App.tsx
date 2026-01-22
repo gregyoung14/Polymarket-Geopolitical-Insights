@@ -216,9 +216,9 @@ const styles = {
 
 // Inject keyframes for spinner
 const injectKeyframes = () => {
-  if (document.getElementById("grokedge-keyframes")) return;
+  if (document.getElementById("polymarket-insights-keyframes")) return;
   const style = document.createElement("style");
-  style.id = "grokedge-keyframes";
+  style.id = "polymarket-insights-keyframes";
   style.textContent = `
     @keyframes spin { to { transform: rotate(360deg); } }
   `;
@@ -258,7 +258,7 @@ export const App: React.FC<AppProps> = ({ isOpen, onClose }) => {
       prevUrlRef.current !== marketData.url
     ) {
       // URL changed - reset all analysis state
-      console.log("[GrokEdge] URL changed, resetting analysis");
+      console.log("[Polymarket Insights] URL changed, resetting analysis");
       resetAnalysis();
     }
     prevUrlRef.current = marketData?.url || null;
@@ -300,7 +300,7 @@ export const App: React.FC<AppProps> = ({ isOpen, onClose }) => {
       <div style={styles.header}>
         <div style={styles.title}>
           <span style={styles.dot} />
-          GrokEdge
+          Polymarket Insights
         </div>
         <div>
           <button style={styles.refreshBtn} onClick={refresh} title="Refresh">

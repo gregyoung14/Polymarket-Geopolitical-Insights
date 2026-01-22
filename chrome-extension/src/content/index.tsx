@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 
-const HOST_ID = "grokedge-extension-root";
+const HOST_ID = "polymarket-insights-extension-root";
 
 // Main wrapper that handles the floating button and panel visibility
-const GrokedgeRoot: React.FC = () => {
+const PolymarketInsightsRoot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hasAutoOpened, setHasAutoOpened] = useState(false);
 
@@ -89,11 +89,11 @@ function mount() {
   const root = ReactDOM.createRoot(rootDiv);
   root.render(
     <React.StrictMode>
-      <GrokedgeRoot />
+      <PolymarketInsightsRoot />
     </React.StrictMode>
   );
 
-  console.log("[Grokedge] Extension mounted");
+  console.log("[Polymarket Insights] Extension mounted");
 }
 
 // Initialize with delay to let page load

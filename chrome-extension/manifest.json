@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Grokedge Polymarket Insights",
+  "name": "Polymarket Insights",
   "version": "0.2.0",
   "description": "Adds a slide-in panel on Polymarket to surface Grok/X insights and live outcome prices.",
   "permissions": ["activeTab", "scripting"],
@@ -16,6 +16,6 @@
     }
   ],
   "action": {
-    "default_title": "GrokEdge Polymarket Insights"
+    "default_title": "Polymarket Insights"
   }
 }

@@ -9,7 +9,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 echo -e "${BLUE}╔══════════════════════════════════════════════════════════════╗${NC}"
-echo -e "${BLUE}║              🚀 GrokEdge Setup & Launch Script               ║${NC}"
+echo -e "${BLUE}║              🚀 Polymarket Insights Setup & Launch Script               ║${NC}"
 echo -e "${BLUE}╚══════════════════════════════════════════════════════════════╝${NC}"
 echo ""
 
@@ -114,7 +114,7 @@ if [ "$DEV_MODE" = true ]; then
     # ========================================================================
     echo -e "${BLUE}[4/5] Starting development servers in tmux...${NC}"
     
-    SESSION_NAME="grokedge-dev"
+    SESSION_NAME="polymarket-insights-dev"
     
     # Kill existing session if it exists
     tmux kill-session -t "$SESSION_NAME" 2>/dev/null || true

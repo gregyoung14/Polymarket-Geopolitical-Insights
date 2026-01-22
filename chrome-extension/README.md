@@ -1,4 +1,4 @@
-# Grokedge Polymarket Insights (Chrome MV3)
+# Polymarket Insights (Chrome MV3)
 
 Slide-in side panel on `polymarket.com` that scrapes market outcomes (name, probability %, yes/no prices, volume) and sends them to a local Grok-powered analysis server.
 
@@ -30,7 +30,7 @@ The server exposes:
 **Option A: Using extension.js (recommended for dev)**
 
 ```bash
-cd grokedge/chrome-extension
+cd polymarket-insights/chrome-extension
 bun run dev
 ```
 
@@ -40,13 +40,13 @@ This opens a managed Chrome instance with hot-reload.
 
 1. Open Chrome → `chrome://extensions`
 2. Enable **Developer mode**
-3. Click **Load unpacked** and choose `grokedge/chrome-extension`
+3. Click **Load unpacked** and choose `polymarket-insights/chrome-extension`
 4. Navigate to a Polymarket market page
 
 ### 3. Use the extension
 
 1. Open any Polymarket market page (e.g., `https://polymarket.com/event/...`)
-2. The Grokedge panel slides in automatically
+2. The Polymarket Insights panel slides in automatically
 3. Click **"🔮 Analyze with Grok"** to run sentiment analysis
 4. Watch streaming logs as Grok researches the market
 5. View the final sentiment, probability estimate, and recommendation

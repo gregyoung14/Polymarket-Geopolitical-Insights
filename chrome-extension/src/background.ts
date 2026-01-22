@@ -1,5 +1,5 @@
 /**
- * Background service worker for Grokedge extension
+ * Background service worker for Polymarket Insights extension
  *
  * Currently a placeholder for future functionality:
  * - Badge updates
@@ -8,7 +8,7 @@
  */
 
 chrome.runtime.onInstalled.addListener(() => {
-  console.log("Grokedge extension installed");
+  console.log("Polymarket Insights extension installed");
 });
 
 // Listen for messages from content script

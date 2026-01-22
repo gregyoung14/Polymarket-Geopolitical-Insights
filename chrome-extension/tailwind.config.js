@@ -38,7 +38,7 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Custom Grokedge colors
+        // Custom Polymarket Insights colors
         ge: {
           bg: "#0b1021",
           panel: "#0f1834",

@@ -1,5 +1,5 @@
 """
-Prediction Server - FastAPI with SSE streaming for Grokedge Chrome Extension
+Prediction Server - FastAPI with SSE streaming for Polymarket Insights Chrome Extension
 
 Thin API layer over foundational_data.py and historical_research_live.py
 with caching to avoid burning through Grok API credits.
@@ -136,7 +136,7 @@ def set_cached(key: str, result: CachedResult):
 # --- FastAPI App ---
 
 app = FastAPI(
-    title="GrokEdge Prediction Server",
+    title="Polymarket Insights Prediction Server",
     description="Streaming Grok analysis for Polymarket outcomes (Parallelized)",
     version="0.2.0",
 )
@@ -798,7 +798,7 @@ if __name__ == "__main__":
     import uvicorn
     
     port = int(os.getenv("PORT", 8000))
-    print(f"🚀 Starting GrokEdge Prediction Server on port {port}")
+    print(f"🚀 Starting Polymarket Insights Prediction Server on port {port}")
     print(f"📡 SSE endpoint: POST http://localhost:{port}/analyze")
     print(f"💾 Cache TTL: {CACHE_TTL_MINUTES} minutes")
     print(f"⚡ PARALLELIZED: Foundational + Historical run concurrently")

@@ -1,7 +1,7 @@
 [project]
-name = "grokedge-backend"
+name = "polymarket-insights-backend"
 version = "0.1.0"
-description = "GrokEdge - Grok-powered prediction market analysis backend"
+description = "Polymarket Insights - Grok-powered prediction market analysis backend"
 requires-python = ">=3.10"
 dependencies = [
     "fastapi>=0.109.0",
